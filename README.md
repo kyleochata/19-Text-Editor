@@ -29,8 +29,6 @@ Sreenshot of installed application:
 
 - GitBash (windows) or Terminal (Mac)
 - Node.js
-- MongoDB
-- Insomnia
 
 Locate a suitable place where you would like to download this repository. Once found, copy the repositories SSH or HTTPS to clone through the terminal or download the zipfile from GitHub. After it is downloaded, please ensure that node.js is installed. Once it is installed and at least version 18 or higher, go to your terminal, navigate to the directory that contains this repository. Once there please type in the CLI 'npm run install' followed by 'npm run build'. This will cause the node_modules to be downloaded and a dist folder to be generated inside of the client folder. When the dist folder is created, please use the CLI command of 'npm run start:dev'. This will make the local build of this application live on localhost:3000. You can head there to interact with the app as well as download the application for offline functionality.
 
