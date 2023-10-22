@@ -17,7 +17,7 @@ export const putDb = async (content) => {
   console.log('put to indexdb');
   //est connection to database jate. Version 1
   const connectionToDB = await openDB('jate', 1);
-  //allow readwrite privilages for the connection to jate
+  //allow readwrite privileges for the connection to jate
   const tx = connectionToDB.transaction('jate', 'readwrite');
   //open the object store
   const objectStore = tx.objectStore('jate');
@@ -32,12 +32,12 @@ export const getDb = async () => {
   console.log('get to indexdb');
   //est connection to database jate. Version 1
   const connectionToDB = await openDB('jate', 1);
-  //allow readwrite privilages for the connection to jate
+  //allow readwrite privileges for the connection to jate
   const tx = connectionToDB.transaction('jate', 'readonly');
   //open the object store
   const objectStore = tx.objectStore('jate');
   //get all content from client to db
-  const req = objectStore.getAll({ id: 1, value: content });
+  const req = objectStore.get(1);
   const res = await req;
   console.log('get from data values', res)
 };
