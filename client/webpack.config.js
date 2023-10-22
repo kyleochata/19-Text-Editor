@@ -36,8 +36,8 @@ module.exports = () => {
         description: 'Create notes and code snippets offline or online',
         background_color: '#000000',
         theme_color: '#31a9e1',
-        start_url: './',
-        publicPath: './',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
