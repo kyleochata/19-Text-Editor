@@ -36,7 +36,7 @@ export const getDb = async () => {
   const tx = connectionToDB.transaction('jate', 'readonly');
   //open the object store
   const objectStore = tx.objectStore('jate');
-  //get all content from client to db
+  //get all content from indexdb with id of 1. All notes/text saved to this single id
   const req = objectStore.get(1);
   const res = await req;
   console.log('get from data values', res)

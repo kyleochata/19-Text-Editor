@@ -17,7 +17,7 @@ butInstall.addEventListener('click', async () => {
   if (!eventPrompt) {
     return
   }
-
+  //prompt to install
   eventPrompt.prompt();
 
   //ensuring that the prompt can only be used once
